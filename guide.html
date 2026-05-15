@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 Airdrop Hunter's Playbook — Full Guide</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', sans-serif; background: #0d0d1a; color: #cbd5e1; line-height: 1.8; }
+  .header {
+    background: linear-gradient(135deg, #1a0d2e, #0d1a2e);
+    padding: 40px 24px;
+    text-align: center;
+    border-bottom: 1px solid #2a2a4a;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #c4b5fd, #818cf8, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+  }
+  .header p { color: #64748b; font-size: 14px; }
+  .container { max-width: 780px; margin: 0 auto; padding: 40px 24px 80px; }
+  h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #a78bfa;
+    margin: 48px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2a2a4a;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #e0e0ff;
+    margin: 28px 0 12px;
+  }
+  p { margin-bottom: 16px; color: #94a3b8; }
+  strong { color: #e0e0ff; }
+  ul, ol { padding-left: 24px; margin-bottom: 16px; }
+  li { color: #94a3b8; margin-bottom: 8px; }
+  li strong { color: #e0e0ff; }
+  .callout {
+    background: #131326;
+    border-left: 4px solid #7c3aed;
+    border-radius: 0 12px 12px 0;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  .callout.warning { border-color: #f59e0b; }
+  .callout.success { border-color: #10b981; }
+  .callout.danger { border-color: #ef4444; }
+  .callout p { margin: 0; color: #94a3b8; }
+  .callout strong { color: #e0e0ff; }
+  .steps {
+    background: #131326;
+    border: 1px solid #2a2a4a;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 16px 0;
+  }
+  .step-row {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .step-row:last-child { margin-bottom: 0; }
+  .sn {
+    background: #7c3aed;
+    color: white;
+    min-width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .st { font-size: 15px; color: #94a3b8; }
+  .st strong { color: #e0e0ff; }
+  .protocol-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #131326;
+    border: 1px solid #2a2a4a;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 12px 0 20px;
+  }
+  .token-badge {
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 8px 16px;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  .protocol-meta { flex: 1; }
+  .protocol-meta .name { font-size: 17px; font-weight: 700; color: #e0e0ff; }
+  .protocol-meta .est { font-size: 13px; color: #10b981; margin-top: 2px; }
+  .protocol-meta .chain { font-size: 12px; color: #475569; }
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  .cost-table th {
+    background: #131326;
+    color: #a78bfa;
+    padding: 10px 16px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a4a;
+  }
+  .cost-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #1e1e38;
+    color: #94a3b8;
+  }
+  .cost-table td:first-child { color: #e0e0ff; }
+  .toc {
+    background: #131326;
+    border: 1px solid #2a2a4a;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 0 0 40px;
+  }
+  .toc h3 { margin-top: 0; margin-bottom: 12px; color: #a78bfa; }
+  .toc a { color: #64748b; text-decoration: none; display: block; padding: 4px 0; font-size: 14px; }
+  .toc a:hover { color: #a78bfa; }
+  .divider { border: none; border-top: 1px solid #1e1e38; margin: 40px 0; }
+  .highlight { color: #fbbf24; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>2026 Airdrop Hunter's Playbook</h1>
+  <p>Full Guide — 7 Confirmed Opportunities + Step-by-Step Qualification</p>
+</div>
+
+<div class="container">
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <a href="#intro">1. Introduction: Why 2026 is Different</a>
+    <a href="#wallet">2. Wallet Setup Checklist</a>
+    <a href="#mask">3. MetaMask (MASK)</a>
+    <a href="#poly">4. Polymarket (POLY)</a>
+    <a href="#base">5. Base Ecosystem</a>
+    <a href="#backpack">6. Backpack Wallet</a>
+    <a href="#opensea">7. OpenSea 2.0</a>
+    <a href="#jupiter">8. Jupiter (Solana)</a>
+    <a href="#sybil">9. Anti-Sybil Rules</a>
+    <a href="#costs">10. Gas Cost & ROI Breakdown</a>
+    <a href="#calendar">11. Snapshot Calendar</a>
+    <a href="#bonus">12. Bonus: Stealth Pick</a>
+  </div>
+
+  <!-- INTRO -->
+  <h2 id="intro">1. Introduction: Why 2026 is Different</h2>
+  <p>Crypto airdrops have existed since 2017, but 2026 marks a turning point. Three things have converged:</p>
+  <ul>
+    <li><strong>Regulatory clarity</strong> — More projects can distribute tokens legally to a broader audience.</li>
+    <li><strong>Massive delayed distributions</strong> — Projects like MetaMask and Polymarket that have been building for years are finally launching tokens.</li>
+    <li><strong>Points systems are transparent</strong> — Unlike old airdrops where eligibility was secret, most 2026 protocols tell you exactly what earns points.</li>
+  </ul>
+  <div class="callout">
+    <p><strong>Key principle:</strong> In 2026, airdrops reward <em>consistent genuine use</em> over weeks and months — not one-time big transactions. A user who does 5 small swaps per week for 3 months beats someone who does one $10,000 swap.</p>
+  </div>
+  <p>This guide focuses on 7 opportunities where the qualification window is still open as of May 2026. Each section gives you exact steps, not vague suggestions.</p>
+
+  <!-- WALLET SETUP -->
+  <h2 id="wallet">2. Wallet Setup Checklist</h2>
+  <h3>MetaMask (EVM chains — Ethereum, Base, Arbitrum, Polygon)</h3>
+  <div class="steps">
+    <div class="step-row"><div class="sn">1</div><div class="st">Install MetaMask from <strong>metamask.io</strong> only (beware fake extensions)</div></div>
+    <div class="step-row"><div class="sn">2</div><div class="st">Create a new wallet — write down your <strong>12-word seed phrase</strong> on paper, never digitally</div></div>
+    <div class="step-row"><div class="sn">3</div><div class="st">Add networks: <strong>Base</strong> (chainid 8453), <strong>Arbitrum One</strong> (42161), <strong>Polygon</strong> (137), <strong>Linea</strong> (59144)</div></div>
+    <div class="step-row"><div class="sn">4</div><div class="st">Fund with at least <strong>$20–50 ETH</strong> to cover activity across protocols</div></div>
+  </div>
+  <h3>Phantom (Solana — for Jupiter & Backpack)</h3>
+  <div class="steps">
+    <div class="step-row"><div class="sn">1</div><div class="st">Install Phantom from <strong>phantom.app</strong></div></div>
+    <div class="step-row"><div class="sn">2</div><div class="st">Create wallet, save seed phrase</div></div>
+    <div class="step-row"><div class="sn">3</div><div class="st">Fund with at least <strong>$10–20 SOL</strong> for activity</div></div>
+  </div>
+  <div class="callout warning">
+    <p><strong>One wallet rule:</strong> Use exactly one wallet per protocol. Multiple wallets doing similar activity will be flagged by anti-sybil detection and disqualified.</p>
+  </div>
+
+  <!-- METAMASK -->
+  <h2 id="mask">3. MetaMask (MASK Token)</h2>
+  <div class="protocol-header">
+    <div class="token-badge">MASK</div>
+    <div class="protocol-meta">
+      <div class="name">MetaMask — Consensys</div>
+      <div class="est">Est. airdrop value: $200 – $2,000+ per wallet</div>
+      <div class="chain">Chains: Ethereum, Base, Linea, Arbitrum, Polygon</div>
+    </div>
+  </div>
+  <p>MetaMask has 30M+ active users and is building a points system (MetaMask Rewards) that converts to MASK tokens. If you already use MetaMask, you're likely already earning points passively.</p>
+  <h3>How to Qualify</h3>
+  <div class="steps">
+    <div class="step-row"><div class="sn">1</div><div class="st">Enable <strong>MetaMask Rewards</strong> in Settings → Experimental → MetaMask Rewards</div></div>
+    <div class="step-row"><div class="sn">2</div><div class="st">Use <strong>MetaMask Swaps</strong> at least 2–3 times per week (even small amounts like $5–10 count)</div></div>
+    <div class="step-row"><div class="sn">3</div><div class="st">Use <strong>MetaMask Bridge</strong> to bridge assets between chains (Ethereum ↔ Base ↔ Linea)</div></div>
+    <div class="step-row"><div class="sn">4</div><div class="st">Connect MetaMask to dApps across multiple categories: 1 DEX, 1 lending protocol, 1 NFT platform</div></div>
+    <div class="step-row"><div class="sn">5</div><div class="st">Keep activity on <strong>Linea</strong> (MetaMask's own L2) — highest point multiplier</div></div>
+  </div>
+  <div class="callout success">
+    <p><strong>Best bang for effort:</strong> Bridge $20 from Ethereum to Linea, do 3–4 swaps on Linea weekly. This activates the Linea bonus multiplier and signals genuine MetaMask ecosystem use.</p>
+  </div>
+
+  <!-- POLYMARKET -->
+  <h2 id="poly">4. Polymarket (POLY Token)</h2>
+  <div class="protocol-header">
+    <div class="token-badge">POLY</div>
+    <div class="protocol-meta">
+      <div class="name">Polymarket — Prediction Market</div>
+      <div class="est">Est. airdrop value: $100 – $1,000+ per wallet</div>
+      <div class="chain">Chain: Polygon</div>
+    </div>
+  </div>
+  <p>Polymarket is the world's largest prediction market. They've signalled building their own chain and a POLY token distribution later in 2026. Volume and variety of participation are the key signals.</p>
+  <h3>How to Qualify</h3>
+  <div class="steps">
+    <div class="step-row"><div class="sn">1</div><div class="st">Go to <strong>polymarket.com</strong> and connect MetaMask (Polygon network)</div></div>
+    <div class="step-row"><div class="sn">2</div><div class="st">Link your <strong>X (Twitter) account</strong> to your Polymarket profile — confirmed as a likely eligibility factor</div></div>
+    <div class="step-row"><div class="sn">3</div><div class="st">Trade across <strong>at least 3 different market categories</strong>: politics, sports, crypto, science/tech</div></div>
+    <div class="step-row"><div class="sn">4</div><div class="st">Maintain <strong>consistent weekly activity</strong> — small trades ($1–5) spread over months beat one big trade</div></div>
+    <div class="step-row"><div class="sn">5</div><div class="st">Do NOT use multiple wallets — wash trading detection is sophisticated and will exclude both wallets</div></div>
+  </div>
+  <div class="callout warning">
+    <p><strong>Avoid:</strong> Concentrating all volume in one market (e.g., only crypto price markets). Spread across politics, sports, and other categories to show genuine engagement.</p>
+  </div>
+
+  <!-- BASE -->
+  <h2 id="base">5. Base Ecosystem</h2>
+  <div class="protocol-header">
+    <div class="token-badge">BASE</div>
+    <div class="protocol-meta">
+      <div class="name">Base — Coinbase Layer 2</div>
+      <div class="est">Est. airdrop value: $50 – $500+ per wallet</div>
+      <div class="chain">Chain: Base (L2 on Ethereum)</div>
+    </div>
+  </div>
+  <p>Base has no official token yet but Coinbase has strongly hinted at one. Activity on Base is almost universally seen as qualifying behavior. The pattern is consistent: bridge in, use the native DEX (Aerodrome or Uniswap on Base), interact with dApps.</p>
+  <h3>The Base Checklist</h3>
+  <div class="steps">
+    <div class="step-row"><div class="sn">1</div><div class="st"><strong>Bridge assets to Base</strong> via base.org/bridge or Stargate — bridge at least $20+</div></div>
+    <div class="step-row"><div class="sn">2</div><div class="st">Swap on <strong>Aerodrome Finance</strong> (Base's native DEX) — 2–3x per week</div></div>
+    <div class="step-row"><div class="sn">3</div><div class="st">Use <strong>Uniswap on Base</strong> — different protocol signals broader ecosystem use</div></div>
+    <div class="step-row"><div class="sn">4</div><div class="st">Interact with <strong>1 NFT platform</strong> on Base (mint a free NFT or list one)</div></div>
+    <div class="step-row"><div class="sn">5</div><div class="st">Try a <strong>Base lending protocol</strong> — Moonwell or Aave on Base (deposit, wait a week, withdraw)</div></div>
+    <div class="step-row"><div class="sn">6</div><div class="st">Maintain activity for <strong>at least 3 months</strong> — age of wallet and duration of activity matter</div></div>
+  </div>
+
+  <!-- BACKPACK -->
+  <h2 id="backpack">6. Backpack Wallet</h2>
+  <div class="protocol-header">
+    <div class="token-badge">BP</div>
+    <div class="protocol-meta">
+      <div class="name">Backpack — Solana Wallet & Exchange</div>
+      <div class="est">Est. airdrop value: $100 – $800+ per wallet</div>
+      <div class="chain">Chain: Solana</div>
+    </div>
+  </div>
+  <p>Backpack launched its TGE in March 2026. Early adopters who used the Backpack wallet and Backpack Exchange qualified. If you haven't started yet, there may still be ongoing rewards for active exchange users.</p>
+  <h3>Steps</h3>
+  <div class="steps">
+    <div class="step-row"><div class="sn">1</div><div class="st">Download <strong>Backpack wallet</strong> from backpack.app</div></div>
+    <div class="step-row"><div class="sn">2</div><div class="sn">2</div><div class="st">Create a wallet and use <strong>Backpack Exchange</strong> for spot trading on Solana</div></div>
+    <div class="step-row"><div class="sn">3</div><div class="st">Trade consistently on the exchange — volume and consistency are rewarded</div></div>
+    <div class="step-row"><div class="sn">4</div><div class="st">Hold any <strong>Mad Lads NFT</strong> (Backpack's native NFT collection) for bonus eligibility</div></div>
+  </div>
+
+  <!-- OPENSEA -->
+  <h2 id="opensea">7. OpenSea 2.0</h2>
+  <div class="protocol-header">
+    <div class="token-badge">OS2</div>
+    <div class="protocol-meta">
+      <div class="name">OpenSea 2.0 — NFT Marketplace</div>
+      <div class="est">Est. airdrop value: $80 – $600+ per wallet</div>
+      <div class="chain">Chains: Ethereum, Base, Polygon</div>
+    </div>
+  </div>
+  <p>OpenSea relaunched as OpenSea 2.0 and introduced a points/rewards system. Buying, selling, and listing NFTs on the platform accrues points toward an expected token distribution.</p>
+  <h3>Steps</h3>
+  <div class="steps">
+    <div class="step-row"><div class="sn">1</div><div class="st">Go to <strong>opensea.io</strong> and connect MetaMask</div></div>
+    <div class="step-row"><div class="sn">2</div><div class="st">Buy at least 1 NFT (even cheap ones on Base — some cost under $1)</div></div>
+    <div class="step-row"><div class="sn">3</div><div class="st">List NFTs for sale (listing itself earns points, even if they don't sell)</div></div>
+    <div class="step-row"><div class="sn">4</div><div class="st">Check the <strong>OpenSea Rewards dashboard</strong> in your profile for current point balance</div></div>
+  </div>
+
+  <!-- JUPITER -->
+  <h2 id="jupiter">8. Jupiter (Solana)</h2>
+  <div class="protocol-header">
+    <div class="token-badge">JUP</div>
+    <div class="protocol-meta">
+      <div class="name">Jupiter — Solana DEX Aggregator</div>
+      <div class="est">Est. airdrop value: $50 – $400+ (ongoing rounds)</div>
+      <div class="chain">Chain: Solana</div>
+    </div>
+  </div>
+  <p>Jupiter has done multiple airdrop rounds and continues to reward active users. Ongoing use of Jupiter Swap and Jupiter Perps (perpetual trading) is the primary qualification signal.</p>
+  <div class="steps">
+    <div class="step-row"><div class="sn">1</div><div class="st">Go to <strong>jup.ag</strong> and connect Phantom wallet</div></div>
+    <div class="step-row"><div class="sn">2</div><div class="st">Swap regularly using Jupiter Swap — at least 2–3x per week, varied token pairs</div></div>
+    <div class="step-row"><div class="sn">3</div><div class="st">Try <strong>Jupiter Perps</strong> for at least 1 trade (even a small one) — perp users have historically received larger allocations</div></div>
+    <div class="step-row"><div class="sn">4</div><div class="st">Stake JUP tokens if you already hold some — stakers get vote power and bonus eligibility</div></div>
+  </div>
+
+  <!-- ANTI-SYBIL -->
+  <h2 id="sybil">9. Anti-Sybil Rules</h2>
+  <p>Anti-sybil detection has become sophisticated in 2026. The following patterns will get your wallet excluded — often without warning:</p>
+  <div class="callout danger">
+    <p><strong>Never do these:</strong></p>
+  </div>
+  <ul>
+    <li>Sending funds from the same source wallet to multiple wallets doing identical activity</li>
+    <li>Executing the same transaction sequence (same amount, same tokens, same timing) across wallets</li>
+    <li>Activity crammed into a single day with no prior history</li>
+    <li>Gas wallets that never interact with protocols (only fund other wallets)</li>
+    <li>Round-number transactions done in bulk (5x $10.00 swaps in one hour across wallets)</li>
+  </ul>
+  <div class="callout success">
+    <p><strong>Do these instead:</strong> Use one wallet, vary amounts slightly, spread activity across weeks, use the protocol for its actual purpose (not just to trigger points).</p>
+  </div>
+
+  <!-- COSTS -->
+  <h2 id="costs">10. Gas Cost & ROI Breakdown</h2>
+  <table class="cost-table">
+    <thead>
+      <tr><th>Protocol</th><th>Setup Cost</th><th>Monthly Upkeep</th><th>Low Est. Return</th><th>ROI (Low)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>MetaMask (MASK)</td><td>$5–10</td><td>$5–15</td><td>$200</td><td>10x+</td></tr>
+      <tr><td>Polymarket (POLY)</td><td>$5–10</td><td>$5–20</td><td>$100</td><td>5x+</td></tr>
+      <tr><td>Base Ecosystem</td><td>$20–30</td><td>$10–20</td><td>$50</td><td>2x+</td></tr>
+      <tr><td>Backpack (BP)</td><td>$10–20</td><td>$5–10</td><td>$100</td><td>5x+</td></tr>
+      <tr><td>OpenSea 2.0</td><td>$5–15</td><td>$2–5</td><td>$80</td><td>5x+</td></tr>
+      <tr><td>Jupiter (JUP)</td><td>$10–15</td><td>$5–10</td><td>$50</td><td>3x+</td></tr>
+    </tbody>
+  </table>
+  <p>These are <em>conservative</em> estimates. Historical airdrops (Uniswap, Arbitrum, dYdX) have returned 50x–500x for early users. The key variable is how early you start.</p>
+
+  <!-- CALENDAR -->
+  <h2 id="calendar">11. Snapshot Calendar (Q2–Q4 2026)</h2>
+  <ul>
+    <li><strong>May–June 2026:</strong> MetaMask Rewards points system active — qualify now for Q3 snapshot</li>
+    <li><strong>June 2026:</strong> Polymarket expanding to new chains — new activity period begins</li>
+    <li><strong>Q3 2026:</strong> Base token speculation window — strong activity through July/August recommended</li>
+    <li><strong>Q4 2026:</strong> Multiple Solana ecosystem distributions expected (Jupiter Round 4, Backpack ongoing)</li>
+    <li><strong>Ongoing:</strong> OpenSea 2.0 points accumulate continuously — no known snapshot date yet</li>
+  </ul>
+  <div class="callout warning">
+    <p><strong>Monitor:</strong> Follow official project Twitter/X accounts for snapshot announcements. Snapshots are often announced 48–72 hours in advance or retroactively.</p>
+  </div>
+
+  <!-- BONUS -->
+  <h2 id="bonus">12. Bonus: Stealth Pick</h2>
+  <div class="protocol-header">
+    <div class="token-badge">???</div>
+    <div class="protocol-meta">
+      <div class="name">Kaito AI — InfoFi Protocol</div>
+      <div class="est">Est. airdrop value: $200 – $3,000+ per active user</div>
+      <div class="chain">Chain: Ethereum / Multi-chain</div>
+    </div>
+  </div>
+  <p>Kaito AI is building the "information finance" layer for crypto — essentially ranking the quality of crypto content and rewarding genuine contributors. Their <strong>YAPS points system</strong> rewards users who create and curate quality crypto content on X (Twitter).</p>
+  <p>This is a <span class="highlight">high asymmetric opportunity</span>: the barrier to entry is writing quality crypto posts on X, which most people don't bother to do. Active Kaito users in early 2026 have reported YAPS balances worth hundreds of dollars.</p>
+  <h3>How to Qualify</h3>
+  <div class="steps">
+    <div class="step-row"><div class="sn">1</div><div class="st">Go to <strong>kaito.ai</strong> and connect your X (Twitter) account</div></div>
+    <div class="step-row"><div class="sn">2</div><div class="st">Check your current YAPS score — it's already tracking your X activity retroactively</div></div>
+    <div class="step-row"><div class="sn">3</div><div class="st">Post <strong>original crypto insights</strong> on X daily or every other day — not reposts, original takes</div></div>
+    <div class="step-row"><div class="sn">4</div><div class="st">Engage with other high-YAPS accounts (quality signal, not spam)</div></div>
+    <div class="step-row"><div class="sn">5</div><div class="st">Connect your wallet at kaito.ai to ensure airdrop eligibility when token launches</div></div>
+  </div>
+  <div class="callout success">
+    <p><strong>Why this is the stealth pick:</strong> The token hasn't launched yet, the qualification is content-based (not capital-based), and most people in crypto don't know about it. Early participants have an enormous advantage.</p>
+  </div>
+
+  <hr class="divider">
+  <p style="text-align:center;color:#334155;font-size:13px;">This guide is for informational purposes only. Not financial advice. Always do your own research. Airdrop values are estimates based on historical comparable distributions.</p>
+
+</div>
+</body>
+</html>
