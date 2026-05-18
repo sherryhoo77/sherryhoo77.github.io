@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT Cheat Sheet 2026 — Full 120-Command Reference</title>
+<meta name="description" content="Full 120-command ChatGPT cheat sheet. All 8 categories: Role & Context, Output Control, Iteration, Coding, Writing, Research, Business, Productivity.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#0a0a14;color:#e0e0f0;line-height:1.6}
+.top-bar{background:#1f6feb;padding:10px 20px;text-align:center;font-size:13px;color:#fff;font-weight:700}
+.top-bar a{color:#cce3ff;text-decoration:none;margin-left:8px}
+h1{text-align:center;padding:36px 20px 8px;font-size:28px;font-weight:900;color:#f0f6fc}
+.sub{text-align:center;color:#484f58;font-size:14px;padding-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:0;max-width:1200px;margin:0 auto;border-top:1px solid #21262d;border-left:1px solid #21262d}
+.col{border-right:1px solid #21262d;border-bottom:1px solid #21262d;padding:0}
+.col-header{background:#161b22;padding:12px 18px;font-size:12px;font-weight:700;color:#58a6ff;text-transform:uppercase;letter-spacing:.8px;border-bottom:1px solid #21262d}
+.items{padding:14px 18px}
+.item{margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #161b22}
+.item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.cmd{font-family:'Consolas',monospace;font-size:12px;color:#79c0ff;background:#0d1117;border:1px solid #21262d;border-radius:4px;padding:4px 8px;display:block;margin-bottom:4px;word-break:break-word}
+.tip{font-size:12px;color:#484f58}
+.tip strong{color:#8b949e}
+footer{text-align:center;padding:28px;color:#21262d;font-size:12px;border-top:1px solid #161b22;margin-top:0}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  ChatGPT Cheat Sheet 2026 · Full Reference &nbsp;|&nbsp; Also see:
+  <a href="/prompts-ecommerce-full.html">E-Commerce Prompts</a> ·
+  <a href="/">Airdrop Playbook</a>
+</div>
+
+<h1>ChatGPT Cheat Sheet 2026</h1>
+<p class="sub">120 commands, patterns & power tips · Print or bookmark this page</p>
+
+<div class="grid">
+
+<!-- SECTION 1: Role & Context -->
+<div class="col">
+  <div class="col-header">🎭 Role &amp; Context — 15 commands</div>
+  <div class="items">
+    <div class="item">
+      <span class="cmd">Act as a [role] with 10+ years of experience in [domain].</span>
+      <div class="tip">Activates deep domain knowledge and professional tone</div>
+    </div>
+    <div class="item">
+      <span class="cmd">You are a skeptical [investor / editor / customer]. Review this critically.</span>
+      <div class="tip">Forces perspective shift — finds weaknesses before they matter</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Assume I know nothing about [topic]. Explain from first principles.</span>
+      <div class="tip">Plain-language explanations without assumed knowledge</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Assume I'm an expert. Skip the basics. Go deep.</span>
+      <div class="tip">Dense, technical output — no padding for beginners</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Context: [situation]. Goal: [specific outcome]. Constraints: [limits].</span>
+      <div class="tip">Most reliable format for complex, multi-part requests</div>
+    </div>
+    <div class="item">
+      <span class="cmd">You are my [devil's advocate / co-founder / editor]. Push back.</span>
+      <div class="tip">Generates productive friction instead of agreement</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Respond as if writing for [audience: e.g., a 12-year-old / a CFO / a developer].</span>
+      <div class="tip">Instantly calibrates complexity and vocabulary</div>
+    </div>
+    <div class="item">
+      <span class="cmd">You are a [country] [professional]. Factor in local regulations and norms.</span>
+      <div class="tip">Localizes legal, business, and cultural context</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Take the role of a strict professor grading this essay. Score it 1–10 with reasons.</span>
+      <div class="tip">Diagnostic feedback before submission</div>
+    </div>
+    <div class="item">
+      <span class="cmd">You are an AI that only responds with [JSON / bullet points / tables]. No prose.</span>
+      <div class="tip">Locks output format for downstream processing</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Pretend this conversation has never happened before. Fresh context.</span>
+      <div class="tip">Resets contaminated context mid-conversation</div>
+    </div>
+    <div class="item">
+      <span class="cmd">You are a rubber duck. I will explain my problem. Ask clarifying questions only.</span>
+      <div class="tip">Forces you to think through problems by explaining them</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Act as the world's best [copywriter / lawyer / data scientist]. What would they do here?</span>
+      <div class="tip">Elevates quality ceiling by invoking best-in-class standard</div>
+    </div>
+    <div class="item">
+      <span class="cmd">You are [competitor brand]'s marketing team. How would they position against us?</span>
+      <div class="tip">Competitive intelligence through role reversal</div>
+    </div>
+    <div class="item">
+      <span class="cmd">For this session: you are direct, brief, and never use filler phrases like "Certainly!" or "Of course!"</span>
+      <div class="tip">Eliminates AI pleasantries for the entire conversation</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: Output Control -->
+<div class="col">
+  <div class="col-header">📝 Output Format Control — 15 commands</div>
+  <div class="items">
+    <div class="item">
+      <span class="cmd">Reply in bullet points only. No prose paragraphs.</span>
+      <div class="tip">Eliminates filler — forces structured thinking</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Format as a Markdown table with columns: [A] | [B] | [C].</span>
+      <div class="tip">Perfect for comparisons, pricing, feature matrices</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Under 100 words. No padding. No summary at the end.</span>
+      <div class="tip">Forces conciseness — great for emails and messages</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Give me 3 versions: [formal] / [casual] / [aggressive]. Label each.</span>
+      <div class="tip">A/B test tone before committing</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Output only the [code / title / email / list]. No explanation.</span>
+      <div class="tip">Skip the preamble. Get the artifact.</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write a TL;DR first, then the full version below.</span>
+      <div class="tip">Bottom-line-up-front structure for busy readers</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Use numbered steps. Each step max 2 sentences.</span>
+      <div class="tip">Scannable action format — great for instructions</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Respond in [language]. Keep technical terms in English.</span>
+      <div class="tip">Bilingual output for international teams</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Bold the most important word or phrase in each bullet.</span>
+      <div class="tip">Forces prioritization — reveals what actually matters</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Give me a before/after comparison in a table.</span>
+      <div class="tip">Visualizes improvement — great for rewrites</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Format this as a FAQ: Q then A, repeat. 5 pairs max.</span>
+      <div class="tip">Converts information into discoverable Q&amp;A format</div>
+    </div>
+    <div class="item">
+      <span class="cmd">List pros first, then cons. Then your recommendation.</span>
+      <div class="tip">Structured decision format — avoids wishy-washy outputs</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Output as a JSON object with keys: [title], [summary], [tags].</span>
+      <div class="tip">Machine-parseable — great for automation pipelines</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Give me only the headline options. 10 variants. No explanation.</span>
+      <div class="tip">Fast headline testing — pick the winner yourself</div>
+    </div>
+    <div class="item">
+      <span class="cmd">End with: "My confidence in this answer: [X/10] because [reason]."</span>
+      <div class="tip">Forces the model to flag uncertain outputs</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3: Iteration & Refinement -->
+<div class="col">
+  <div class="col-header">🔄 Iteration &amp; Refinement — 15 commands</div>
+  <div class="items">
+    <div class="item">
+      <span class="cmd">Make it [shorter / punchier / more formal / simpler].</span>
+      <div class="tip">One-word refinement loop — fastest editing workflow</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What's the weakest part of this argument?</span>
+      <div class="tip">Self-critique before you submit — finds the flaw first</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Now give me the strongest counterargument.</span>
+      <div class="tip">Stress-test your position before opposition does</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Improve this. Keep my exact voice and style.</span>
+      <div class="tip">Edits content without losing authorship feel</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Rate this 1–10 and tell me specifically what's missing.</span>
+      <div class="tip">Diagnostic before final polish — structured feedback</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What would make this 2× more persuasive?</span>
+      <div class="tip">Forces specificity — vague improvements don't count</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Cut this by 40% without losing the key points.</span>
+      <div class="tip">Aggressive editing — surfaces what's truly essential</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Rewrite the opening so it grabs attention in 3 seconds.</span>
+      <div class="tip">Hook optimization — the first sentence determines everything</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Replace all jargon with plain English equivalents.</span>
+      <div class="tip">Accessibility edit — test if your idea survives translation</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Make this more action-oriented. Every sentence should imply what to do.</span>
+      <div class="tip">Transforms passive description into directive copy</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What are 3 ways this could be misunderstood?</span>
+      <div class="tip">Clarity audit — catches ambiguity before it reaches the audience</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Add one concrete example to each abstract point.</span>
+      <div class="tip">Makes theoretical content tangible and memorable</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Reverse this list. Put the most important item first.</span>
+      <div class="tip">Reorders for impact — readers drop off; front-load value</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Rewrite this for a 10th grade reading level (Flesch-Kincaid ~60).</span>
+      <div class="tip">Measurable clarity target — not just "make it simpler"</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What's one word I should change to make the biggest impact?</span>
+      <div class="tip">Surgical focus — often a single word shift changes everything</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4: Coding -->
+<div class="col">
+  <div class="col-header">💻 Coding Shortcuts — 15 commands</div>
+  <div class="items">
+    <div class="item">
+      <span class="cmd">Debug this code. Explain each fix in a comment above the line: [paste code]</span>
+      <div class="tip">Line-by-line debug with inline explanation</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Refactor for readability. Do not change behavior. Flag any risky changes.</span>
+      <div class="tip">Safe cleanup — preserves functionality while improving code</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Add comprehensive error handling to this function.</span>
+      <div class="tip">Defensive coding — catches edge cases you didn't think of</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write unit tests for every branch of this function.</span>
+      <div class="tip">Coverage-first — tests written from spec, not implementation</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Convert this [Python] to [JavaScript]. Preserve all comments.</span>
+      <div class="tip">Language-to-language translation with documentation intact</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Explain this code like I'm a junior developer. Line by line.</span>
+      <div class="tip">Onboarding documentation — great for code reviews</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What's the time complexity of this function? How would you optimize it?</span>
+      <div class="tip">Performance audit with actionable improvement path</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Find all potential security vulnerabilities in this code.</span>
+      <div class="tip">Security audit — SQLi, XSS, injection, exposed secrets</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write a regex to [match X / extract Y / validate Z]. Test with 3 examples.</span>
+      <div class="tip">Regex with built-in test cases — always verify patterns</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Generate a SQL query to [goal]. Explain each clause.</span>
+      <div class="tip">Query with reasoning — not just a black-box answer</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Create a boilerplate [React component / FastAPI endpoint / Bash script] for [task].</span>
+      <div class="tip">Skeleton code — faster than starting from blank</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Review my code for: unused imports, dead code, naming inconsistencies.</span>
+      <div class="tip">Linter-style checklist review without running a linter</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Simulate 3 test cases for this function: happy path, edge case, failure case.</span>
+      <div class="tip">Mental model testing before writing actual tests</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What would break if I change [X]? List all downstream effects.</span>
+      <div class="tip">Impact analysis before refactoring</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write a git commit message for these changes: [paste diff]</span>
+      <div class="tip">Consistent, descriptive commits — saves future-you time</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 5: Writing & Email -->
+<div class="col">
+  <div class="col-header">📧 Writing &amp; Email — 15 commands</div>
+  <div class="items">
+    <div class="item">
+      <span class="cmd">Write a cold email to a [job title] at a [company type]. Goal: [CTA]. Under 90 words.</span>
+      <div class="tip">Personalized cold outreach — brief enough to get read</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Rewrite this to sound more confident. Remove all hedging language.</span>
+      <div class="tip">Eliminates "I think maybe possibly" — sounds decisive</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write a follow-up email after [situation]. Reference [specific detail]. No desperation.</span>
+      <div class="tip">Confident follow-up — adds value, doesn't beg</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Turn these bullet points into a professional email. Keep it under 150 words.</span>
+      <div class="tip">Converts rough notes to polished communication</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Rewrite this email to be less aggressive without losing the point.</span>
+      <div class="tip">De-escalation edit — preserves firmness, removes heat</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write 5 subject lines for this email. One should be curiosity-driven, one direct, one personal.</span>
+      <div class="tip">Subject line A/B test — open rate starts here</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Expand this into a 500-word blog intro. Hook first, then context, then teaser.</span>
+      <div class="tip">Structure-first expansion — never blank-page syndrome</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write an executive summary of this [document / meeting / report] in 5 bullets.</span>
+      <div class="tip">Bottom-line-up-front for leadership — saves meeting time</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Rewrite this in [Hemingway / David Ogilvy / Paul Graham] style.</span>
+      <div class="tip">Style transfer — borrow voice from a master</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write a LinkedIn post about [topic]. First sentence must stop the scroll. Max 200 words.</span>
+      <div class="tip">Platform-native format — short, hook-first, no headers</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Proofread this. Fix grammar, punctuation, and passive voice. Track changes.</span>
+      <div class="tip">Full copy edit with explanation of each change</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write a polite but firm decline for [situation].</span>
+      <div class="tip">Professional no — without burning bridges</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Generate 3 different openings for this essay. Each different approach.</span>
+      <div class="tip">Lead options — pick the framing that fits your argument</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Make this more readable: add white space, subheadings, and break up long sentences.</span>
+      <div class="tip">Readability edit — structure, not just words</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write an apology email for [mistake]. Acknowledge, explain briefly, fix it, move forward.</span>
+      <div class="tip">Structured apology — acknowledges without over-explaining</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 6: Research & Analysis -->
+<div class="col">
+  <div class="col-header">🔍 Research &amp; Analysis — 15 commands</div>
+  <div class="items">
+    <div class="item">
+      <span class="cmd">Summarize [topic] in 5 key points for a non-expert. No jargon.</span>
+      <div class="tip">Instant briefing format — digest before deep-dive</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What are the 3 most common misconceptions about [topic]?</span>
+      <div class="tip">Surfaces what most people get wrong — great for contrarian content</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Compare [A] vs [B] vs [C]. Table format: pros, cons, best for whom.</span>
+      <div class="tip">Decision matrix — forces structured tradeoff thinking</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What are the top 5 counterarguments to [position]? Who makes them?</span>
+      <div class="tip">Steelman the opposition before publishing</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What would a [pessimist / optimist / realist] say about [this situation]?</span>
+      <div class="tip">Forces multi-perspective analysis — avoids groupthink</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What questions should I be asking about [topic] that I haven't asked yet?</span>
+      <div class="tip">Unknown unknowns — discovers blind spots in your research</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Explain [concept] using an analogy involving [familiar domain].</span>
+      <div class="tip">Intuition-building — complex ideas through familiar patterns</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What are the first-order and second-order effects of [decision / event]?</span>
+      <div class="tip">Systems thinking — traces consequences beyond the obvious</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What data would change your mind on this? What would change mine?</span>
+      <div class="tip">Falsifiability check — tests if beliefs are actually evidence-based</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Give me a brief history of [topic] in 5 turning points.</span>
+      <div class="tip">Historical context — pattern recognition across time</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What industries or domains have already solved [problem]? How?</span>
+      <div class="tip">Cross-domain solution search — avoids reinventing the wheel</div>
+    </div>
+    <div class="item">
+      <span class="cmd">SWOT analysis for [company / idea / decision]. Be specific, not generic.</span>
+      <div class="tip">Forces specificity — generic SWOTs are useless</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What's the 80/20 of [topic]? What 20% of knowledge gets 80% of results?</span>
+      <div class="tip">Pareto framing — filters signal from noise immediately</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Predict 3 scenarios for [situation]: best case, base case, worst case.</span>
+      <div class="tip">Scenario planning — prepares for range of outcomes</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What would [expert / famous thinker] say about [problem]? In their style.</span>
+      <div class="tip">Borrowed frameworks — Munger, Taleb, Drucker, Feynman, etc.</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 7: Business -->
+<div class="col">
+  <div class="col-header">💼 Business &amp; Strategy — 15 commands</div>
+  <div class="items">
+    <div class="item">
+      <span class="cmd">Write a one-pager for [idea]. Problem, solution, market, revenue model, ask. Max 400 words.</span>
+      <div class="tip">Pitch skeleton — investor/partner ready in minutes</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What are the 5 reasons [business idea] could fail? Be brutal.</span>
+      <div class="tip">Pre-mortem — kills bad ideas before they cost money</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write cold outreach to [role] for [goal]. 3 sentences max. End with a soft CTA.</span>
+      <div class="tip">Lean outreach — respects time, makes one ask</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Help me prep for a meeting with [stakeholder]. What questions should I ask?</span>
+      <div class="tip">Meeting intelligence — goes in with a plan, not just slides</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write a project proposal for [goal]. Include: objective, timeline, resources, success metric.</span>
+      <div class="tip">Structured proposal — accountable and measurable</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What would a McKinsey consultant say about this business problem?</span>
+      <div class="tip">Frameworks-first — MECE, issue trees, hypotheses</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Generate a 30/60/90 day plan for [role / goal].</span>
+      <div class="tip">Onboarding or planning scaffold — concrete and time-bound</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What KPIs should I track for [goal]? Which one is the north star metric?</span>
+      <div class="tip">Measurement framework — picks one metric that matters most</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Write interview questions for a [role]. Include behavioral and technical.</span>
+      <div class="tip">Hiring toolkit — mixed format for full candidate picture</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What's the best pricing model for [product]? Give 3 options with tradeoffs.</span>
+      <div class="tip">Pricing strategy — tiered, usage-based, flat — with reasoning</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Help me write a negotiation script for [situation]. What do I ask for first?</span>
+      <div class="tip">Negotiation prep — anchoring, BATNA, concession sequence</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What are the top 3 growth levers for a [business type] at [stage]?</span>
+      <div class="tip">Stage-appropriate strategy — early vs. growth vs. scale differs</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Draft a partnership proposal email to [company type]. We offer [X], they offer [Y].</span>
+      <div class="tip">Win-win framing — what's in it for them, not just you</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Create a simple OKR for [team / quarter / goal]. One objective, 3 key results.</span>
+      <div class="tip">Goal-setting discipline — measurable and time-bound</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What's the minimum viable version of [idea]? What can I cut and still test the core?</span>
+      <div class="tip">MVP thinking — finds the smallest test of the biggest assumption</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 8: Productivity -->
+<div class="col">
+  <div class="col-header">⚡ Productivity &amp; Decision-Making — 15 commands</div>
+  <div class="items">
+    <div class="item">
+      <span class="cmd">I have [X hours]. Here are my tasks: [list]. Prioritize using the Eisenhower Matrix.</span>
+      <div class="tip">Urgency vs. importance filter — stops busy work from blocking real work</div>
+    </div>
+    <div class="item">
+      <span class="cmd">I'm overwhelmed. Help me break [big task] into 10-minute sub-tasks.</span>
+      <div class="tip">Task decomposition — eliminates paralysis by making it tractable</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What's the one thing I should do first tomorrow to make the most progress on [goal]?</span>
+      <div class="tip">Single-priority focus — beats to-do lists that never shrink</div>
+    </div>
+    <div class="item">
+      <span class="cmd">I need to decide between [A] and [B]. Walk me through a decision framework.</span>
+      <div class="tip">Structured decision — applies criteria you specify, not gut feel</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Help me write a weekly review. What to celebrate, what to improve, what to plan.</span>
+      <div class="tip">Retrospective format — compounds learning week over week</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Summarize this meeting transcript in 3 bullets: decisions made, actions, owners.</span>
+      <div class="tip">Action-focused summary — filters talk from commitments</div>
+    </div>
+    <div class="item">
+      <span class="cmd">I keep procrastinating on [task]. What's probably blocking me? Give 3 hypotheses.</span>
+      <div class="tip">Behavioral diagnosis — root cause before solutions</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Create a checklist for [recurring process]. Make it foolproof for a new person.</span>
+      <div class="tip">Process documentation — delegation-ready standard operating procedure</div>
+    </div>
+    <div class="item">
+      <span class="cmd">I need to say no to [request]. Help me decline without damaging the relationship.</span>
+      <div class="tip">Diplomatic no — boundaries with grace</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What are 3 ways I could automate or delegate [task]? Be specific about tools.</span>
+      <div class="tip">Leverage thinking — stop doing what shouldn't be done by you</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Create a time block schedule for [day]. My energy peaks at [time]. Include breaks.</span>
+      <div class="tip">Energy-aware scheduling — matches task difficulty to focus level</div>
+    </div>
+    <div class="item">
+      <span class="cmd">I'm stuck on [problem] for [X days]. Give me 5 completely different angles to try.</span>
+      <div class="tip">Lateral thinking — breaks mental fixation with forced reframing</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Help me set a 90-day goal for [area]. Make it specific, measurable, and ambitious but realistic.</span>
+      <div class="tip">SMART goal construction — not vague intention, real commitment</div>
+    </div>
+    <div class="item">
+      <span class="cmd">What habit would have the highest ROI if I built it over the next 6 months?</span>
+      <div class="tip">Compound thinking — finds the highest-leverage behavioral investment</div>
+    </div>
+    <div class="item">
+      <span class="cmd">Teach me [skill] using the Feynman technique. Explain, find gaps, simplify, repeat.</span>
+      <div class="tip">Learning methodology — understanding, not just memorization</div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end grid -->
+
+<footer>
+  <p>ChatGPT Cheat Sheet 2026 · 120 commands · sherryhoo77.github.io</p>
+  <p style="margin-top:8px">Also: <a href="/prompts-ecommerce-full.html" style="color:#58a6ff">50 E-Commerce Prompts</a> · <a href="/guide.html" style="color:#58a6ff">2026 Airdrop Guide</a></p>
+</footer>
+
+</body>
+</html>
